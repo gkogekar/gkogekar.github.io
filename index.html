@@ -9,15 +9,16 @@
   body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #0b1220;
-    color: #e8eefc;
+    background: #f7f9fc;
+    color: #1a1a1a;
     line-height: 1.6;
   }
 
   header {
     padding: 80px 20px;
     text-align: center;
-    background: linear-gradient(135deg, #0b1220, #162447);
+    background: #ffffff;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   h1 {
@@ -27,7 +28,7 @@
 
   .subtitle {
     font-size: 18px;
-    color: #b9c6e6;
+    color: #555;
     max-width: 900px;
     margin: auto;
   }
@@ -55,20 +56,29 @@
   }
 
   .card {
-    background: #111a2e;
+    background: #ffffff;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+    border: 1px solid #e6e6e6;
+  }
+
+  .card h3 {
+    margin-top: 0;
+  }
+
+  .card ul {
+    margin: 10px 0 0 20px;
   }
 
   .card a {
-    color: #4ea1ff;
+    color: #1f6feb;
     text-decoration: none;
   }
 
   .skills span {
     display: inline-block;
-    background: #1f2a44;
+    background: #eef3ff;
     padding: 6px 10px;
     margin: 5px;
     border-radius: 20px;
@@ -78,7 +88,7 @@
   footer {
     text-align: center;
     padding: 30px;
-    color: #8892b0;
+    color: #777;
   }
 </style>
 </head>
@@ -117,13 +127,32 @@ I also have experience in STEM mentoring and supporting learners in mathematics 
 
 <div class="card">
 <h3>Open-Source Contributions to Cantera (Thermochemistry & Reactor Modeling)</h3>
-<p>Major contributions to Cantera involving thermodynamics, chemical kinetics, catalytic reactors, and real-gas modeling.</p>
+
+<p><b>Overview:</b> Contributions to Cantera for thermodynamics, chemical kinetics, catalytic reactors, and reacting flow modeling.</p>
+
+<ul>
+<li>Real-gas thermodynamics (Peng–Robinson EOS)</li>
+<li>1D flame and non-ideal combustion models</li>
+<li>Packed-bed and catalytic reactor modeling</li>
+<li>Surface chemistry and diffusion processes</li>
+<li>Multiple PR contributions to thermochemistry modules</li>
+</ul>
+
 <p><a href="https://github.com/Cantera" target="_blank">Cantera GitHub</a></p>
 </div>
 
 <div class="card">
-<h3>Boundary-Layer Modeling & Reduced Order Analysis for Reactive Systems</h3>
-<p>Developed boundary-layer formulation for reactive incineration systems and ROM-based exploratory analysis.</p>
+<h3>Boundary-Layer Modeling & Reduced Order Analysis</h3>
+
+<p><b>Overview:</b> CFD boundary-layer formulation for reactive incineration systems with ROM-based analysis.</p>
+
+<ul>
+<li>Von Mises boundary-layer transformation formulation</li>
+<li>Coupled CFD–chemistry solver implementation</li>
+<li>Reactive incineration (PFAS-related systems)</li>
+<li>ROM analysis using snapshot-based decomposition (Jupyter notebook)</li>
+</ul>
+
 <p>
 <a href="https://github.com/franklingoldsmith/BoundaryLayerModel" target="_blank">Boundary Layer Model</a><br>
 <a href="https://github.com/gkogekar/reduced-order-modeling-examples/tree/main/ROM_BLcode" target="_blank">ROM Notebook</a>
@@ -132,13 +161,30 @@ I also have experience in STEM mentoring and supporting learners in mathematics 
 
 <div class="card">
 <h3>Quasi-2D Catalytic Packed-Bed Reactor Modeling</h3>
-<p>Reactor modeling framework for catalytic packed-bed systems using Cantera-based transport-reaction coupling.</p>
+
+<p><b>Overview:</b> Reduced-dimensional reactor modeling framework for catalytic packed-bed systems using Cantera chemistry.</p>
+
+<ul>
+<li>Mass, energy, and species transport coupling</li>
+<li>Quasi-2D porous media formulation</li>
+<li>Catalytic reaction kinetics integration</li>
+<li>Reactor-scale computational acceleration</li>
+</ul>
+
 <p><a href="https://github.com/Cantera/Quasi-2D-packbed" target="_blank">GitHub Repository</a></p>
 </div>
 
 <div class="card">
 <h3>Thermodynamic Modeling: Peng–Robinson Equation of State</h3>
-<p>Developed theoretical and computational formulation of Peng–Robinson EOS for non-ideal thermodynamic systems.</p>
+
+<p><b>Overview:</b> Theoretical formulation of real-gas thermodynamics for non-ideal reacting systems.</p>
+
+<ul>
+<li>Derivation of Peng–Robinson EOS</li>
+<li>High-pressure thermodynamic modeling</li>
+<li>Application to combustion and reactor systems</li>
+</ul>
+
 <p><a href="https://github.com/gkogekar/PengRobinsonEoS_Theory" target="_blank">Documentation</a></p>
 </div>
 
@@ -149,22 +195,17 @@ I also have experience in STEM mentoring and supporting learners in mathematics 
 <h2>Publications</h2>
 
 <div class="card">
+C. Rocchio et al. <i>Incineration of Perfluorooctanoic Acid Leads to Regeneration of Smaller Perfluorocarboxylic Acids</i>, Journal of Physical Chemistry A 129 (35), 8160–8169<br><br>
 
-C. Rocchio, J.M. Mattila, S. Sharma, J.D. Krug, G. Kogekar, W.R. Roberson, J.H. Offenberg,
-K.D. Pennell, W.P. Linak, C.F. Goldsmith, <i>Incineration of Perfluorooctanoic Acid Leads to Regeneration of Smaller Perfluorocarboxylic Acids</i>, The Journal of Physical Chemistry A 129 (35), 8160–8169<br><br>
+G. Kogekar et al. <i>Structure-dependent microkinetic modeling of the CO2 desorption with surface diffusion</i>, Journal of Catalysis 116407<br><br>
 
-G. Kogekar, B. Kreitz, R Cheula and F. Goldsmith. <i>Structure-dependent microkinetic modeling of the CO2 desorption with surface diffusion</i>, Journal of Catalysis, 116407<br><br>
+G. Kogekar et al. <i>Computationally efficient and robust boundary-layer code for incinerator modeling</i>, In preparation<br><br>
 
-G. Kogekar and F. Goldsmith. <i>Computationally efficient and robust boundary-layer code for incinerator modeling</i>, In preparation<br><br>
+G. Kogekar et al. <i>A fast and efficient computational algorithm for modeling catalytic chemistry inside a packed-bed reactor</i>, Submitted<br><br>
 
-G. Kogekar, H. Zhu, and R.J. Kee. <i>A fast and efficient computational algorithm for modeling catalytic chemistry inside a packed-bed reactor and its variants</i>, Submitted<br><br>
+G. Kogekar et al. <i>Impact of non-ideal behavior on ignition delay and chemical kinetics in high-pressure shock tube reactors</i>, Combustion and Flame 189, 1339–1351<br><br>
 
-Y. Lin et al. <i>Partial Oxidation of Methane within an Opposed Flow Reactor with an Embedded Catalyst Mesh</i>, WSSCI 2019<br><br>
-
-G. Kogekar and R.J. Kee. <i>Model-based performance for gas distribution from perforated manifolds and spargers</i>, Chemical Engineering and Processing 140, 127–135<br><br>
-
-G. Kogekar et al. <i>Impact of non-ideal behavior on ignition delay and chemical kinetics in high-pressure shock tube reactors</i>, Combustion and Flame 189, 1339–1351
-
+G. Kogekar et al. <i>Model-based performance for gas distribution from perforated manifolds and spargers</i>, Chemical Engineering and Processing 140, 127–135
 </div>
 </section>
 
@@ -173,21 +214,17 @@ G. Kogekar et al. <i>Impact of non-ideal behavior on ignition delay and chemical
 <h2>Conference Presentations</h2>
 
 <div class="card">
-
 ‘Computationally Efficient Boundary-Layer Code for Incinerator Modeling with Detailed PFOA Chemistry’, ESSCI (2024)<br><br>
 
 ‘Microkinetic modeling of multifaceted catalysts in Cantera’, NAM28 (2023)<br><br>
 
-‘Experimental and Theoretical Validation of the Chemical Kinetics for the Thermal Destruction of Perfluoroalkyl Substances’, SRC Annual review 2022<br><br>
+‘Cantera: Open source thermo-chemistry and catalysis simulation tool’, ACS Fall 2022<br><br>
 
-‘Cantera: An open source software tool for integrating complex thermo-chemistry into continuum-scale catalysis simulations’, ACS Fall 2022<br><br>
+‘Computational boundary-layer modeling for PFAS systems’, International Symposium on Combustion 2022<br><br>
 
-‘Computationally efficient and robust boundary-layer code for PFAS modeling’, International Symposium on Combustion 2022<br><br>
+‘Gas distribution modeling in perforated manifolds and spargers’, RMFM Symposium 2016<br><br>
 
-‘Coupling of three-dimensional microchannel heat exchanger simulations’, RMFM Symposium 2016<br><br>
-
-‘Impact of non-ideal behavior on ignition delay and chemical kinetics in high-pressure shock tube reactors’, APS DFD / Princeton Summer School
-
+‘Non-ideal combustion effects in high-pressure shock tube reactors’, APS DFD / Princeton Summer School
 </div>
 </section>
 
@@ -214,9 +251,8 @@ G. Kogekar et al. <i>Impact of non-ideal behavior on ignition delay and chemical
 <h2>Contact</h2>
 <div class="card">
 Email: gkogekar@gmail.com<br>
-GitHub: https://github.com/gkogekar<br>
+GitHub: https://github.com/gkogekar
 </div>
-
 </section>
 
 <footer>
