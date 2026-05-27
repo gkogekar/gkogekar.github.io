@@ -5,6 +5,13 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Projects</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
 <body>
 
 <div class="navbar">
@@ -19,34 +26,97 @@
 
 <h2>Projects</h2>
 
+<!-- CAN TERA -->
 <div class="card">
-<h3>Cantera Contributions (Thermochemistry & Reacting Flows)</h3>
-<p>Contributions to thermodynamics, chemical kinetics, catalytic reactors, and reacting flow models in Cantera.</p>
-<p><a href="https://github.com/Cantera">Cantera GitHub</a></p>
-</div>
+<h3>Open-Source Contributions to Cantera (Thermochemistry, Reacting Flows & Reactor Modeling)</h3>
 
-<div class="card">
-<h3>Boundary-Layer Modeling & Reduced Order Analysis</h3>
-<p>CFD boundary-layer formulation for reactive incineration systems with ROM-based analysis.</p>
 <p>
-<a href="https://github.com/franklingoldsmith/BoundaryLayerModel">Boundary Layer Model</a><br>
-<a href="https://github.com/gkogekar/reduced-order-modeling-examples/tree/main/ROM_BLcode">ROM Notebook</a>
+Contributed to the Cantera multiphysics simulation framework for thermodynamics, chemical kinetics, and reacting flow systems with emphasis on real-gas modeling, catalytic reactors, and solver-level improvements.
+</p>
+
+<p><b>Key Contributions:</b></p>
+<ul>
+<li>Implemented and extended real-gas thermodynamics using Peng–Robinson equation of state for high-pressure reacting systems</li>
+<li>Developed 1D flame and non-ideal combustion models with detailed chemical kinetics</li>
+<li>Formulated catalytic and packed-bed reactor models within multiphysics simulation infrastructure</li>
+<li>Integrated surface chemistry, adsorption, and diffusion-controlled reaction mechanisms</li>
+<li>Contributed multiple pull requests across thermochemistry and reactor modules (solver + model enhancements)</li>
+</ul>
+
+<p>
+<a href="https://github.com/Cantera" target="_blank">Cantera GitHub Organization</a>
 </p>
 </div>
 
+<!-- BOUNDARY LAYER + ROM -->
 <div class="card">
-<h3>Quasi-2D Packed-Bed Reactor Modeling</h3>
-<p>Reactor modeling framework for catalytic packed-bed systems using Cantera.</p>
-<p><a href="https://github.com/Cantera/Quasi-2D-packbed">GitHub Repo</a></p>
+<h3>Boundary-Layer Modeling & Reduced Order Modeling for Reactive Incineration Systems</h3>
+
+<p>
+Developed a computational boundary-layer framework for reactive incinerator systems involving coupled transport–reaction physics with detailed chemistry (including PFAS degradation pathways). Extended the formulation to include reduced-order modeling for field reconstruction and dimensionality reduction.
+</p>
+
+<p><b>Key Contributions:</b></p>
+<ul>
+<li>Derived Von Mises–transformed boundary-layer governing equations for reacting flow systems</li>
+<li>Implemented coupled CFD–chemistry solver for reactive transport simulation</li>
+<li>Developed numerical framework for incineration modeling with detailed chemical kinetics</li>
+<li>Applied model to PFAS degradation chemistry in high-temperature environments</li>
+<li>Constructed ROM workflow using snapshot-based decomposition of CFD solution fields</li>
+<li>Performed exploratory reduced-order analysis of velocity and scalar fields using Jupyter notebooks</li>
+</ul>
+
+<p>
+<a href="https://github.com/franklingoldsmith/BoundaryLayerModel" target="_blank">Boundary Layer Model</a><br>
+<a href="https://github.com/gkogekar/reduced-order-modeling-examples/tree/main/ROM_BLcode" target="_blank">ROM Boundary Layer Notebook</a>
+</p>
 </div>
 
+<!-- PACKED BED -->
 <div class="card">
-<h3>Thermodynamic Modeling (Peng–Robinson EOS)</h3>
-<p>Real-gas thermodynamics modeling and documentation.</p>
-<p><a href="https://github.com/gkogekar/PengRobinsonEoS_Theory">Documentation</a></p>
+<h3>Quasi-2D Catalytic Packed-Bed Reactor Modeling</h3>
+
+<p>
+Developed a quasi-two-dimensional reactor modeling framework for catalytic packed-bed systems enabling efficient simulation of coupled transport and heterogeneous reaction phenomena in porous media.
+</p>
+
+<p><b>Key Contributions:</b></p>
+<ul>
+<li>Formulated coupled mass, energy, and species transport equations in porous catalytic media</li>
+<li>Developed quasi-2D reactor representation for reduced computational complexity</li>
+<li>Integrated detailed heterogeneous reaction kinetics using Cantera framework</li>
+<li>Applied model to catalytic systems including ammonia synthesis-type reaction environments</li>
+<li>Enabled reactor-scale simulation with preserved physicochemical fidelity</li>
+</ul>
+
+<p>
+<a href="https://github.com/Cantera/Quasi-2D-packbed" target="_blank">GitHub Repository</a>
+</p>
+</div>
+
+<!-- EOS -->
+<div class="card">
+<h3>Thermodynamic Modeling: Peng–Robinson Equation of State</h3>
+
+<p>
+Developed a theoretical and computational formulation of the Peng–Robinson equation of state for modeling non-ideal thermodynamic behavior in high-pressure reacting systems.
+</p>
+
+<p><b>Key Contributions:</b></p>
+<ul>
+<li>Derived thermodynamic formulation of Peng–Robinson EOS for real-gas systems</li>
+<li>Analyzed applicability in combustion and high-pressure reactor environments</li>
+<li>Established framework for integration into multiphysics CFD simulations</li>
+<li>Documented formulation for use in reactor-scale modeling workflows</li>
+</ul>
+
+<p>
+<a href="https://github.com/gkogekar/PengRobinsonEoS_Theory" target="_blank">Documentation</a>
+</p>
 </div>
 
 </div>
 
 </body>
+</html>
 </html>
