@@ -1,263 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>CFD Engineer | Computational Portfolio</title>
-
-<style>
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f7f9fc;
-    color: #1a1a1a;
-    line-height: 1.6;
-  }
-
-  header {
-    padding: 80px 20px;
-    text-align: center;
-    background: #ffffff;
-    border-bottom: 1px solid #e6e6e6;
-  }
-
-  h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-  }
-
-  .subtitle {
-    font-size: 18px;
-    color: #555;
-    max-width: 900px;
-    margin: auto;
-  }
-
-  .buttons a {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 16px;
-    background: #1f6feb;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-  }
-
-  section {
-    max-width: 1000px;
-    margin: auto;
-    padding: 50px 20px;
-  }
-
-  h2 {
-    border-left: 4px solid #1f6feb;
-    padding-left: 10px;
-    margin-bottom: 20px;
-  }
-
-  .card {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #e6e6e6;
-  }
-
-  .card h3 {
-    margin-top: 0;
-  }
-
-  .card ul {
-    margin: 10px 0 0 20px;
-  }
-
-  .card a {
-    color: #1f6feb;
-    text-decoration: none;
-  }
-
-  .skills span {
-    display: inline-block;
-    background: #eef3ff;
-    padding: 6px 10px;
-    margin: 5px;
-    border-radius: 20px;
-    font-size: 13px;
-  }
-
-  footer {
-    text-align: center;
-    padding: 30px;
-    color: #777;
-  }
-</style>
+<title>CFD Engineer Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <h1>CFD Engineer | Thermal Systems | Reactor Modeling | Multiphysics Simulation | ROM</h1>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Projects</a>
+  <a href="publications.html">Publications</a>
+  <a href="conferences.html">Conferences</a>
+  <a href="education.html">Education</a>
+</div>
 
-  <p class="subtitle">
-    Computational engineer working on CFD, thermal-fluid systems, and multiphysics modeling with interest in data-driven modeling.
-  </p>
+<div class="container">
 
-  <div class="buttons">
-    <a href="#projects">Projects</a>
-    <a href="#publications">Publications</a>
-    <a href="#contact">Contact</a>
+<div class="flex">
+  <img class="photo" src="https://github.com/gkogekar.png" />
+
+  <div>
+    <h1>CFD Engineer | Thermal Systems | Reactor Modeling | Multiphysics | ROM</h1>
+    <p>
+      Computational engineer focused on CFD, thermal-fluid systems, and multiphysics modeling with interest in data-driven simulation methods.
+    </p>
   </div>
-</header>
+</div>
 
-<!-- ABOUT -->
-<section>
 <h2>About</h2>
 <div class="card">
-I am a computational engineer focused on CFD, thermal-fluid systems, and multiphysics modeling. My work involves developing numerical models for transport phenomena, reacting flows, and reactor systems, with an emphasis on physical accuracy, robustness, and computational efficiency.<br><br>
+I am a computational engineer focused on CFD, thermal-fluid systems, and multiphysics modeling. My work involves developing numerical models for transport phenomena, reacting flows, and reactor systems with an emphasis on physical accuracy and computational efficiency.<br><br>
 
 I am interested in combining classical CFD methods with data-driven approaches to improve simulation workflows and support engineering design and decision-making in complex thermal and fluid systems.<br><br>
 
 I also have experience in STEM mentoring and supporting learners in mathematics and engineering fundamentals.
 </div>
-</section>
 
-<!-- PROJECTS -->
-<section id="projects">
-<h2>Projects</h2>
-
+<h2>Research Focus</h2>
 <div class="card">
-<h3>Open-Source Contributions to Cantera (Thermochemistry & Reactor Modeling)</h3>
-
-<p><b>Overview:</b> Contributions to Cantera for thermodynamics, chemical kinetics, catalytic reactors, and reacting flow modeling.</p>
-
-<ul>
-<li>Real-gas thermodynamics (Peng–Robinson EOS)</li>
-<li>1D flame and non-ideal combustion models</li>
-<li>Packed-bed and catalytic reactor modeling</li>
-<li>Surface chemistry and diffusion processes</li>
-<li>Multiple PR contributions to thermochemistry modules</li>
-</ul>
-
-<p><a href="https://github.com/Cantera" target="_blank">Cantera GitHub</a></p>
+- Computational Fluid Dynamics (CFD)<br>
+- Reactor Modeling & Combustion Systems<br>
+- Thermodynamics & Non-ideal Fluids<br>
+- Multiphysics Simulation<br>
+- Reduced Order Modeling (exploratory)
 </div>
 
-<div class="card">
-<h3>Boundary-Layer Modeling & Reduced Order Analysis</h3>
-
-<p><b>Overview:</b> CFD boundary-layer formulation for reactive incineration systems with ROM-based analysis.</p>
-
-<ul>
-<li>Von Mises boundary-layer transformation formulation</li>
-<li>Coupled CFD–chemistry solver implementation</li>
-<li>Reactive incineration (PFAS-related systems)</li>
-<li>ROM analysis using snapshot-based decomposition (Jupyter notebook)</li>
-</ul>
-
-<p>
-<a href="https://github.com/franklingoldsmith/BoundaryLayerModel" target="_blank">Boundary Layer Model</a><br>
-<a href="https://github.com/gkogekar/reduced-order-modeling-examples/tree/main/ROM_BLcode" target="_blank">ROM Notebook</a>
-</p>
 </div>
-
-<div class="card">
-<h3>Quasi-2D Catalytic Packed-Bed Reactor Modeling</h3>
-
-<p><b>Overview:</b> Reduced-dimensional reactor modeling framework for catalytic packed-bed systems using Cantera chemistry.</p>
-
-<ul>
-<li>Mass, energy, and species transport coupling</li>
-<li>Quasi-2D porous media formulation</li>
-<li>Catalytic reaction kinetics integration</li>
-<li>Reactor-scale computational acceleration</li>
-</ul>
-
-<p><a href="https://github.com/Cantera/Quasi-2D-packbed" target="_blank">GitHub Repository</a></p>
-</div>
-
-<div class="card">
-<h3>Thermodynamic Modeling: Peng–Robinson Equation of State</h3>
-
-<p><b>Overview:</b> Theoretical formulation of real-gas thermodynamics for non-ideal reacting systems.</p>
-
-<ul>
-<li>Derivation of Peng–Robinson EOS</li>
-<li>High-pressure thermodynamic modeling</li>
-<li>Application to combustion and reactor systems</li>
-</ul>
-
-<p><a href="https://github.com/gkogekar/PengRobinsonEoS_Theory" target="_blank">Documentation</a></p>
-</div>
-
-</section>
-
-<!-- PUBLICATIONS -->
-<section id="publications">
-<h2>Publications</h2>
-
-<div class="card">
-C. Rocchio et al. <i>Incineration of Perfluorooctanoic Acid Leads to Regeneration of Smaller Perfluorocarboxylic Acids</i>, Journal of Physical Chemistry A 129 (35), 8160–8169<br><br>
-
-G. Kogekar et al. <i>Structure-dependent microkinetic modeling of the CO2 desorption with surface diffusion</i>, Journal of Catalysis 116407<br><br>
-
-G. Kogekar et al. <i>Computationally efficient and robust boundary-layer code for incinerator modeling</i>, In preparation<br><br>
-
-G. Kogekar et al. <i>A fast and efficient computational algorithm for modeling catalytic chemistry inside a packed-bed reactor</i>, Submitted<br><br>
-
-G. Kogekar et al. <i>Impact of non-ideal behavior on ignition delay and chemical kinetics in high-pressure shock tube reactors</i>, Combustion and Flame 189, 1339–1351<br><br>
-
-G. Kogekar et al. <i>Model-based performance for gas distribution from perforated manifolds and spargers</i>, Chemical Engineering and Processing 140, 127–135
-</div>
-</section>
-
-<!-- CONFERENCES -->
-<section>
-<h2>Conference Presentations</h2>
-
-<div class="card">
-‘Computationally Efficient Boundary-Layer Code for Incinerator Modeling with Detailed PFOA Chemistry’, ESSCI (2024)<br><br>
-
-‘Microkinetic modeling of multifaceted catalysts in Cantera’, NAM28 (2023)<br><br>
-
-‘Cantera: Open source thermo-chemistry and catalysis simulation tool’, ACS Fall 2022<br><br>
-
-‘Computational boundary-layer modeling for PFAS systems’, International Symposium on Combustion 2022<br><br>
-
-‘Gas distribution modeling in perforated manifolds and spargers’, RMFM Symposium 2016<br><br>
-
-‘Non-ideal combustion effects in high-pressure shock tube reactors’, APS DFD / Princeton Summer School
-</div>
-</section>
-
-<!-- SKILLS -->
-<section>
-<h2>Skills</h2>
-<div class="skills">
-<span>CFD</span>
-<span>Thermal-Fluids</span>
-<span>Reactor Modeling</span>
-<span>Multiphysics</span>
-<span>Python</span>
-<span>C++</span>
-<span>Cantera</span>
-<span>Numerical Methods</span>
-<span>Combustion</span>
-<span>Thermodynamics</span>
-<span>ROM (Exploratory)</span>
-</div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-<h2>Contact</h2>
-<div class="card">
-Email: gkogekar@gmail.com<br>
-GitHub: https://github.com/gkogekar
-</div>
-</section>
-
-<footer>
-© 2026 CFD Computational Portfolio
-</footer>
 
 </body>
 </html>
